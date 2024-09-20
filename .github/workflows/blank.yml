@@ -22,3 +22,12 @@ jobs:
     steps:
       - name: "Mostrar mensaje"
         run: echo "Hola mundo"
+  
+  other:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: LS
+        run: echo "Esto es un LS"
+        
