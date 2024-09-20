@@ -24,3 +24,11 @@ jobs:
     steps:
       - name: LS
         run: echo "Esto es un LS"
+  
+  setting:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: setting
+        run: echo "Esto es una configuracion"
