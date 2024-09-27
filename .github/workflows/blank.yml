@@ -6,8 +6,10 @@ jobs:
   test-build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:          
+      - name: Checkout
+        uses: actions/checkout@v4.2.0
       - name: ls
         run: |
-         echo "hola mundo" >> hota.txt
-         cat hola.txt
+         chmod +x script.sh
+         ./scripst.sh
