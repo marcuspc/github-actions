@@ -3,7 +3,13 @@
 name: CI
 
 # Controls when the workflow will run
-on: [push]
+on: 
+  push:
+    branches:
+      - name
+  pull_request:
+    branches:
+      - name
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,7 +38,7 @@ jobs:
     needs: [hola]
     steps:
       - name: LS
-        run: echo "Esto es un LS"
+        run: ls -al
   
   setting:
 
