@@ -33,6 +33,8 @@ jobs:
     steps:
       - name: LS
         run: echo "Esto es un LS"
+      - name: Checkout
+        uses: actions/checkout@v4.2.0
   
   setting:
 
