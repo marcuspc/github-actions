@@ -40,4 +40,4 @@ jobs:
     needs: [other]
     steps:
       - name: setting
-        run: echo "Esto es una configuracion"
+        run: ls -al
