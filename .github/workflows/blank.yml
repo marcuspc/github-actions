@@ -12,4 +12,4 @@ jobs:
       - name: ls
         run: |
          chmod +x script.sh
-         ./scripst.sh
+         ./script.sh
