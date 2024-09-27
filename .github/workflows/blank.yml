@@ -32,7 +32,7 @@ jobs:
     needs: [hola]
     steps:
       - name: LS
-        run: echo "Esto es un LS"
+        run: ls -al
   
   setting:
 
