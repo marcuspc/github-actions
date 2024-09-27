@@ -1,45 +1,13 @@
-# This is a basic workflow to help you get started with Actions
+name: Test
 
-name: CI
-
-# Controls when the workflow will run
 on: [push]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  hola:
-    # The type of runner that the job will run on
+jobs: 
+  test-build:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: "Mostrar mensaje"
-        run: echo "Hola mundo"
-
-      - name: touch file
-        run: touch hola.txt
-
-      - name: Set text
-        run: echo "Hola mundo" >> hola.txt
-
-      - name: Read file
-        run: cat hola.txt
-  
-  other:
-
-    runs-on: ubuntu-latest
-    needs: [hola]
-    steps:
-      - name: LS
-        run: echo "Esto es un LS"
-      - name: Checkout
-        uses: actions/checkout@v4.2.0
-  
-  setting:
-
-    runs-on: ubuntu-latest
-    needs: [other]
-    steps:
-      - name: setting
-        run: ls -al
+      - name: ls
+        run: |
+         echo "hola mundo" >> hota.txt
+         cat hola.txt
